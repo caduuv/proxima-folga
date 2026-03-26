@@ -19,14 +19,20 @@ export const SCHEDULE_CONFIGS: ScheduleConfig[] = [
       },
     ],
   },
+  {
+    id: 'super-rd',
+    label: 'Supervisor RD',
+    cycleLength: 4,      // 3 days work + 1 day off
+    offDaysInCycle: 1,
+    specialRules: [
+      {
+        triggerDayOfWeek: 0,
+        extraDaysOff: 1,
+        label: 'Dobradinha (Dom + Seg)',
+      },
+    ],
+  },
 
-  // Example of how to add future job types:
-  // {
-  //   id: 'tecnico-enfermagem',
-  //   label: 'Técnico de Enfermagem',
-  //   cycleLength: 7,
-  //   offDaysInCycle: 2,
-  // },
 ];
 
 export const getConfigById = (id: string): ScheduleConfig | undefined =>

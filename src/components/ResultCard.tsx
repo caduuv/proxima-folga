@@ -20,7 +20,7 @@ const ResultCard: React.FC<Props> = ({ entries }) => {
         <div className="result-next-date">{formatDateLong(next.date)}</div>
         {isDouble && (
           <div className="badge badge-double">
-            🎉 Dobradinha — você também folga sábado!
+            🎉 Dobradinha!
           </div>
         )}
       </div>

@@ -15,9 +15,9 @@ type Tab = 'resultado' | 'calendario';
 const SESSION_KEY = 'proxima-folga-auth';
 
 const App: React.FC = () => {
-  const [authenticated, setAuthenticated] = React.useState(
-    () => sessionStorage.getItem(SESSION_KEY) === 'true'
-  );
+  const [authenticated, setAuthenticated] = React.useState(true);
+  //    () => sessionStorage.getItem(SESSION_KEY) === 'true'
+
 
   const [jobTypeId, setJobTypeId] = React.useState<string>(SCHEDULE_CONFIGS[0].id);
   const [lastDayOffValue, setLastDayOffValue] = React.useState<string>(
