@@ -18,7 +18,6 @@ const App: React.FC = () => {
   const [authenticated, setAuthenticated] = React.useState(true);
   //    () => sessionStorage.getItem(SESSION_KEY) === 'true'
 
-
   const [jobTypeId, setJobTypeId] = React.useState<string>(SCHEDULE_CONFIGS[0].id);
   const [lastDayOffValue, setLastDayOffValue] = React.useState<string>(
     toInputValue(new Date())
