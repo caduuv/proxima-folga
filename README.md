@@ -1,6 +1,6 @@
 # Próxima Folga
 
-A modern web app for **RD Drogasil** employees to calculate upcoming days off based on their work schedule rotation.
+A modern web app for employees to calculate upcoming days off based on their work schedule rotation.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
